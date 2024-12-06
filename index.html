@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .pricing-plan {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 300px;
+        }
+        .pricing-plan h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .pricing-plan ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .pricing-plan ul li {
+            margin: 5px 0;
+        }
+        .pricing-plan ul li .check {
+            color: green;
+        }
+        .pricing-plan ul li .cross {
+            color: red;
+        }
+        .signup-btn {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .signup-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-plan">
+        <h2>Basic</h2>
+        <p>$9.99/month</p>
+        <ul>
+            <li><span class="check">✔</span> 10GB Storage</li>
+            <li><span class="check">✔</span> 1 User</li>
+            <li><span class="cross">✘</span> Support</li>
+        </ul>
+        <a href="#" class="signup-btn" onclick="signUp('Basic')">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+        <h2>Standard</h2>
+        <p>$19.99/month</p>
+        <ul>
+            <li><span class="check">✔</span> 50GB Storage</li>
+            <li><span class="check">✔</span> 5 Users</li>
+            <li><span class="check">✔</span> Phone & Email Support</li>
+        </ul>
+        <a href="#" class="signup-btn" onclick="signUp('Standard')">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+        <h2>Premium</h2>
+        <p>$49.99/month</p>
+        <ul>
+            <li><span class="check">✔</span> 100GB Storage</li>
+            <li><span class="check">✔</span> 10 Users</li>
+            <li><span class="check">✔</span> 24/7 Support</li>
+        </ul>
+        <a href="#" class="signup-btn" onclick="signUp('Premium')">Sign Up</a>
+    </div>
+
+    <script>
+        function signUp(plan) {
+            alert(`You have selected the ${plan} plan.`);
+        }
+    </script>
+</body>
+</html>
